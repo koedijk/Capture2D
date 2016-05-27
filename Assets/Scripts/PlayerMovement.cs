@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour {
     private string PlayerName;
     private string key;
     // Use this for initialization
+
+    public float newSpeed{get { return Speed; }set { Speed = value; }}
+
     void Awake () {
         //Get objectname for choosing which keys you use base on Player 1 or 2.
         PlayerName = gameObject.name;
