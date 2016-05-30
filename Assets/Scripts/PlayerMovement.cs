@@ -47,11 +47,10 @@ public class PlayerMovement : MonoBehaviour {
     void Move()
     {
         // Can Walk if not Jumping
-        if (!Jumping)
-        {
-            Vector2 move = new Vector2(MoveX * Speed, 0);
-            rigid.velocity = move;
-        }
+        Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
+        rigid.velocity = move;
+        
+
         
     }
 
@@ -59,7 +58,7 @@ public class PlayerMovement : MonoBehaviour {
     {   
         //Can Jump if not Jumping     
         if (Input.GetKeyDown(key) && !Jumping)
-        {            
+        {
             rigid.AddForce(Vector2.up * JumpSpeed);
             Jumping = true;
         }
