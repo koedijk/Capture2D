@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     private string PlayerName;
     private string key;
+    public float newSpeed { get { return Speed; } set { Speed = value; } }
     // Use this for initialization
     void Awake () {
         //Get objectname for choosing which keys you use base on Player 1 or 2.
