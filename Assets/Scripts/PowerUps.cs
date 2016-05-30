@@ -8,6 +8,7 @@ public class PowerUps : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         playerStats = new PlayerMovement();
+        playerStats = gameObject.GetComponent<PlayerMovement>();
 	}
 	
 	// Update is called once per frame
@@ -16,8 +17,16 @@ public class PowerUps : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        PlayerMovement pickup = coll.gameObject.GetComponent<PlayerMovement>();
+        if (coll.gameObject.tag == "Power_Up_Speed")
+        {
+            playerStats.newSpeed = 10f;
+            Destroy(coll.gameObject);
+            Invoke("ReturnToNormal", 3f);
+        }
+    }
 
-        pickup.newSpeed = 10;
+    void ReturnToNormal()
+    {
+        playerStats.newSpeed = 5f;
     }
 }
