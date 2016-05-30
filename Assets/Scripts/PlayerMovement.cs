@@ -45,14 +45,9 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
     void Move()
-    {
-        // Can Walk if not Jumping
-        if (!Jumping)
-        {
-            Vector2 move = new Vector2(MoveX * Speed, 0);
-            rigid.velocity = move;
-        }
-        
+    {        
+        Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
+        rigid.velocity = move;        
     }
 
     void Jump()

@@ -6,28 +6,43 @@ using UnityEngine.UI;
 public class PlayerNames : MonoBehaviour {
     [SerializeField]
     private List<GameObject> Players = new List<GameObject>();
-    private string Playername = "Player1";
+    
     private Vector3 offset = new Vector2(0.05f, 0.6f);
+    private int t;
     [SerializeField]
-    private GameObject[] text;
+    private Text Player1Name;
+    [SerializeField]
+    private Text Player2Name;
      
 	// Use this for initialization
-	void Start ()
+	void Awake ()
     {
-        Transform[] AmountOfPlayers = this.GetComponentsInChildren<Transform>();
-        for (int i = 1; i < AmountOfPlayers.Length; i++)
+        Players.Add(GameObject.Find("Player1"));
+        Players.Add(GameObject.Find("Player2"));
+        Player1Name = GameObject.Find("Player1_Text").GetComponent<Text>();
+        Debug.Log(Player1Name);
+        Player2Name = GameObject.Find("Player2_Text").GetComponent<Text>();
+        Debug.Log(Player2Name);
+        Player1Name.text = PlayerPrefs.GetString("Player1Name");
+        Player2Name.text = PlayerPrefs.GetString("Player2Name");
+        if (PlayerPrefs.GetString("Player1Name") == "")
         {
-            Players.Add(AmountOfPlayers[i].gameObject);
+            t = Random.Range(0, 99999);
+            Player1Name.text = "" + t;
         }
-
-        
-	}
+        if (PlayerPrefs.GetString("Player2Name") == "")
+        {
+            t = Random.Range(0, 99999);
+            Player2Name.text = "" + t;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        text[0].transform.position = (Players[0].transform.position + offset);
-        text[1].transform.position = (Players[1].transform.position + offset);
-	}
+        Player1Name.transform.position = (Players[0].transform.position + offset);
+        Player2Name.transform.position = (Players[1].transform.position + offset);
+
+    }
 
     /*void OnGUI()
     {
