@@ -12,16 +12,12 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     private float JumpSpeed = 300f;
     [SerializeField]
-    private bool Jumping = true;
+    private bool Jumping;
     private Rigidbody2D rigid;
     [SerializeField]
-    private Collider2D coll;
     private string PlayerName;
     private string key;
     // Use this for initialization
-
-    public float newSpeed{get { return Speed; }set { Speed = value; }}
-
     void Awake () {
         //Get objectname for choosing which keys you use base on Player 1 or 2.
         PlayerName = gameObject.name;
@@ -34,15 +30,16 @@ public class PlayerMovement : MonoBehaviour {
             key = "right ctrl";
         }
         rigid = GetComponent<Rigidbody2D>();
-        coll = GetComponent<Collider2D>();
     }
 	
 	// Update is called once per frame
 	void Update () {
         //Walking around
         MoveX = Input.GetAxisRaw(PlayerName);
-
-        Move();
+        if (Input.GetAxisRaw(PlayerName) > 0.1f || Input.GetAxisRaw(PlayerName) < 0.1f)
+        {            
+            Move();
+        }        
         Jump();
 	}
 
@@ -51,8 +48,10 @@ public class PlayerMovement : MonoBehaviour {
         // Can Walk if not Jumping
         if (!Jumping)
         {
-            rigid.velocity = new Vector2(MoveX * Speed, 0);
+            Vector2 move = new Vector2(MoveX * Speed, 0);
+            rigid.velocity = move;
         }
+        
     }
 
     void Jump()
