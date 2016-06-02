@@ -7,7 +7,7 @@ public class PlayerNames : MonoBehaviour {
     [SerializeField]
     private List<GameObject> Players = new List<GameObject>();
     
-    private Vector3 offset = new Vector2(0.05f, 0.6f);
+    private Vector3 offset = new Vector2(0.05f, 0.8f);
     private int t;
     [SerializeField]
     private Text Player1Name;

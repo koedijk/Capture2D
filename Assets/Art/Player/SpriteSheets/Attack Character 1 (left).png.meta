@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 98bdecc022f6ab64b95bfc41066cb86e
+timeCreated: 1464785910
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Attack Character 1 (left)_0
+    21300002: Attack Character 1 (left)_1
+    21300004: Attack Character 1 (left)_2
+    21300006: Attack Character 1 (left)_3
+    21300008: Attack Character 1 (left)_4
+    21300010: Attack Character 1 (left)_5
+    21300012: Attack Character 1 (left)_6
+    21300014: Attack Character 1 (left)_7
+    21300016: Attack Character 1 (left)_8
+    21300018: Attack Character 1 (left)_9
+    21300020: Attack Character 1 (left)_10
+    21300022: Attack Character 1 (left)_11
+    21300024: Attack Character 1 (left)_12
+    21300026: Attack Character 1 (left)_13
+    21300028: Attack Character 1 (left)_14
+    21300030: Attack Character 1 (left)_15
+    21300032: Attack Character 1 (left)_16
+    21300034: Attack Character 1 (left)_17
+    21300036: Attack Character 1 (left)_18
+    21300038: Attack Character 1 (left)_19
+    21300040: Attack Character 1 (left)_20
+    21300042: Attack Character 1 (left)_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Attack Character 1 (left)_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 124
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 124
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 124
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 124
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 124
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 94
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 94
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 94
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 94
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 94
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_11
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 64
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 64
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 64
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 34
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_17
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 34
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 34
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_19
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 34
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Attack Character 1 (left)_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 4
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 964513ee69b9b1f4a9ac17ebf1721459
+timeCreated: 1464690550
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Flag Animation_0
+    21300002: Flag Animation_1
+    21300004: Flag Animation_2
+    21300006: Flag Animation_3
+    21300008: Flag Animation_4
+    21300010: Flag Animation_5
+    21300012: Flag Animation_6
+    21300014: Flag Animation_7
+    21300016: Flag Animation_8
+    21300018: Flag Animation_9
+    21300020: Flag Animation_10
+    21300022: Flag Animation_11
+    21300024: Flag Animation_12
+    21300026: Flag Animation_13
+    21300028: Flag Animation_14
+    21300030: Flag Animation_15
+    21300032: Flag Animation_16
+    21300034: Flag Animation_17
+    21300036: Flag Animation_18
+    21300038: Flag Animation_19
+    21300040: Flag Animation_20
+    21300042: Flag Animation_21
+    21300044: Flag Animation_22
+    21300046: Flag Animation_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Flag Animation_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 100
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 100
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 100
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 100
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 100
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 68
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 68
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 68
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 68
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 68
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 68
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 36
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 36
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 36
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 36
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 36
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 4
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 4
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_21
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 4
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 4
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Flag Animation_23
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 4
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,14 +7,21 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     private float MoveX;
-    [SerializeField]
+    public float movex
+    {
+        get
+        {
+            return MoveX;
+        }
+    }
+
+        [SerializeField]
     private float Speed = 5f;
     [SerializeField]
     private float JumpSpeed = 300f;
     [SerializeField]
     private bool Jumping;
     private Rigidbody2D rigid;
-    [SerializeField]
     private string PlayerName;
     private string key;
     public float newSpeed { get { return Speed; } set { Speed = value; } }
@@ -36,9 +43,10 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Walking around
+
         MoveX = Input.GetAxisRaw(PlayerName);
-        if (Input.GetAxisRaw(PlayerName) > 0.1f || Input.GetAxisRaw(PlayerName) < 0.1f)
-        {            
+        if (Input.GetAxisRaw(PlayerName) > 0.1f || Input.GetAxisRaw(PlayerName) < -0.1f)
+        {
             Move();
         }        
         Jump();
