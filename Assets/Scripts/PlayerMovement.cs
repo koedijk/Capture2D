@@ -21,9 +21,18 @@ public class PlayerMovement : MonoBehaviour {
     private float JumpSpeed = 300f;
     [SerializeField]
     private bool Jumping;
+    public bool jumping
+    {
+        get { return Jumping; }
+    }
     private Rigidbody2D rigid;
+    public Rigidbody2D rigid1
+    {
+        get{ return rigid;}
+    }
     private string PlayerName;
     private string key;
+    private SpriteRenderer sprite;
     public float newSpeed { get { return Speed; } set { Speed = value; } }
     // Use this for initialization
     void Awake () {
@@ -43,12 +52,8 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Walking around
-
         MoveX = Input.GetAxisRaw(PlayerName);
-        if (Input.GetAxisRaw(PlayerName) > 0.1f || Input.GetAxisRaw(PlayerName) < -0.1f)
-        {
-            Move();
-        }        
+        Move();               
         Jump();
 	}
 
@@ -56,7 +61,6 @@ public class PlayerMovement : MonoBehaviour {
     {
         Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
         rigid.velocity = move;
-
     }       
 
     void Jump()

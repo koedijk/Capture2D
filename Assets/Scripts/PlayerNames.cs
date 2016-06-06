@@ -20,9 +20,7 @@ public class PlayerNames : MonoBehaviour {
         Players.Add(GameObject.Find("Player1"));
         Players.Add(GameObject.Find("Player2"));
         Player1Name = GameObject.Find("Player1_Text").GetComponent<Text>();
-        Debug.Log(Player1Name);
         Player2Name = GameObject.Find("Player2_Text").GetComponent<Text>();
-        Debug.Log(Player2Name);
         Player1Name.text = PlayerPrefs.GetString("Player1Name");
         Player2Name.text = PlayerPrefs.GetString("Player2Name");
         if (PlayerPrefs.GetString("Player1Name") == "")

@@ -3,37 +3,77 @@ using System.Collections;
 
 public class PlayerAnimations : MonoBehaviour {
 
-    private Animator anim1;
-    private Animator anim2;
-    private float SpeedPlayer1;
-    private float SpeedPlayer2;
-    private int PlayerIndex = 0;
+    private Animator anim;
+    private PlayerMovement move;
+    private Attack attack;
+    private float SpeedPlayer;
+    private int Switch;
+    private bool Left;
+    private bool Right;
+    private string Playername;
 	// Use this for initialization
 	void Awake ()
     {        
-        if (gameObject.name == "Player1")
+        Playername = gameObject.name;
+        move = GameObject.Find(Playername).GetComponent<PlayerMovement>();
+        attack = GameObject.Find(Playername).GetComponent<Attack>();
+        if (Playername == "Player1")
         {
-            PlayerIndex = 0;
-            anim1 = GameObject.Find("Player1").GetComponent<Animator>();
+            anim = GameObject.Find(Playername).GetComponent<Animator>();
+            return;
         }
-        else if(gameObject.name == "Player2")
+        else if(Playername == "Player2")
         {
-            PlayerIndex = 1;
-            anim2 = GameObject.Find("Player2").GetComponent<Animator>();
+            anim = GameObject.Find(Playername).GetComponent<Animator>();
         }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (PlayerIndex == 0)
+        AnimPlayer(); 
+    }
+
+    void AnimPlayer()
+    {
+        SpeedPlayer = GameObject.Find(Playername).GetComponent<PlayerMovement>().movex;
+        if (SpeedPlayer > 0.1)
         {
-            SpeedPlayer1 = GameObject.Find("Player1").GetComponent<PlayerMovement>().movex;
-            anim1.SetFloat("Player1Speed", SpeedPlayer1);
+            Left = false;
+            Right = true;
         }
-        else if (PlayerIndex == 1)
+        else if (SpeedPlayer < -0.1)
         {
-            SpeedPlayer2 = GameObject.Find("Player2").GetComponent<PlayerMovement>().movex;
-            anim2.SetFloat("Player2Speed", SpeedPlayer2);
+            Right = false;
+            Left = true;            
         }
-	}
+        if (move.jumping == false && attack.PlayerAttack == false)
+        {
+            if (SpeedPlayer == 0f)
+            {
+                anim.Play("Idle");
+                return;
+            }
+            else if (SpeedPlayer > 0.1f)
+            {
+                anim.Play("Run Right");
+                return;
+            }
+            else if (SpeedPlayer < -0.1f)
+            {
+                anim.Play("Run Left");
+                return;
+            }
+
+        }
+        if (move.jumping == true && Right == true)
+        {
+            anim.Play("Jump Right Up");
+            return;
+        }
+        else if (move.jumping == true && Left == true)
+        {
+            anim.Play("Jump Left Up");
+            return;
+        }
+    }
 }

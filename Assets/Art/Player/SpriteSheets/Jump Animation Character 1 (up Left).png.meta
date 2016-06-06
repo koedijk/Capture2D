@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: 87d1265df0864b14aadfa10de1d497ef
+timeCreated: 1464949454
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Jump Animation Character 1 (up Left)_0
+    21300002: Jump Animation Character 1 (up Left)_1
+    21300004: Jump Animation Character 1 (up Left)_2
+    21300006: Jump Animation Character 1 (up Left)_3
+    21300008: Jump Animation Character 1 (up Left)_4
+    21300010: Jump Animation Character 1 (up Left)_5
+    21300012: Jump Animation Character 1 (up Left)_6
+    21300014: Jump Animation Character 1 (up Left)_7
+    21300016: Jump Animation Character 1 (up Left)_8
+    21300018: Jump Animation Character 1 (up Left)_9
+    21300020: Jump Animation Character 1 (up Left)_10
+    21300022: Jump Animation Character 1 (up Left)_11
+    21300024: Jump Animation Character 1 (up Left)_12
+    21300026: Jump Animation Character 1 (up Left)_13
+    21300028: Jump Animation Character 1 (up Left)_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Jump Animation Character 1 (up Left)_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 35
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_10
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_11
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump Animation Character 1 (up Left)_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 4
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
