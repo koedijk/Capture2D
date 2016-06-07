@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-        [SerializeField]
+    [SerializeField]
     private float Speed = 5f;
     [SerializeField]
     private float JumpSpeed = 300f;
@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour {
     private string key;
     private SpriteRenderer sprite;
     public float newSpeed { get { return Speed; } set { Speed = value; } }
+
+    public bool stunned = false;
     // Use this for initialization
     void Awake () {
         //Get objectname for choosing which keys you use base on Player 1 or 2.
@@ -59,12 +61,12 @@ public class PlayerMovement : MonoBehaviour {
 
     void Move()
     {
-        if (!Jumping)
+        if (!Jumping & !stunned)
         {
             Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
             rigid.velocity = move;
         }
-        else
+        if (Jumping & !stunned)
         {
             Vector2 move = new Vector2(MoveX * Speed / 2, rigid.velocity.y);
             rigid.velocity = move;
