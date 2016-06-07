@@ -59,8 +59,16 @@ public class PlayerMovement : MonoBehaviour {
 
     void Move()
     {
-        Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
-        rigid.velocity = move;
+        if (!Jumping)
+        {
+            Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
+            rigid.velocity = move;
+        }
+        else
+        {
+            Vector2 move = new Vector2(MoveX * Speed / 2, rigid.velocity.y);
+            rigid.velocity = move;
+        }
     }       
 
     void Jump()
