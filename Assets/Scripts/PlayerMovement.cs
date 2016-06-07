@@ -3,7 +3,7 @@ using System.Collections;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Collider2D))]
+//[RequireComponent(typeof(Collider2D))]
 public class PlayerMovement : MonoBehaviour {
 
     private float MoveX;
