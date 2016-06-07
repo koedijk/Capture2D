@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-     float timeLeft = 30.0f;
+     float timeLeft = 60.0f;
      
      public Text text;
      
@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour {
      void Update()
      {
          timeLeft -= Time.deltaTime;
-         text.text = "Time Left:" + Mathf.Round(timeLeft);
+         text.text = "" + Mathf.Round(timeLeft);
          if(timeLeft < 0)
          {
              Debug.Log("times over");
