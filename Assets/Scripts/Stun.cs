@@ -19,7 +19,6 @@ public class Stun : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        Debug.Log("ok");
         if (coll.gameObject == foot)
         {
             player.stunned = true;

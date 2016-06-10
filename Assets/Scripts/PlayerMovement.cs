@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour {
             Vector2 move = new Vector2(MoveX * Speed, rigid.velocity.y);
             rigid.velocity = move;
         }
-        if (Jumping & !stunned)
+        else if (Jumping & !stunned)
         {
             Vector2 move = new Vector2(MoveX * Speed / 2, rigid.velocity.y);
             rigid.velocity = move;

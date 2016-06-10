@@ -9,7 +9,7 @@ public class Score : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        Debug.Log(gameObject.name);
 	}
 	
 	// Update is called once per frame
