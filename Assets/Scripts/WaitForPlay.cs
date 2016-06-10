@@ -5,6 +5,7 @@ using System.Collections;
 public class WaitForPlay : MonoBehaviour
 {
     public Text countdown;
+    public GameObject textPanel;
 
     IEnumerator Start()
     {
@@ -16,6 +17,7 @@ public class WaitForPlay : MonoBehaviour
         Time.timeScale = 0.001f;
         yield return StartCoroutine("GetReady");  
         //yield return new WaitForSeconds(0.001f);
+        textPanel.SetActive(false);
         Time.timeScale = 1;
     }
 
