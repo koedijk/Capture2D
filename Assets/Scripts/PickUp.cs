@@ -46,7 +46,6 @@ public class PickUp : MonoBehaviour {
         FlagColl.enabled = false;
         if (Player1)
         {
-            DropFlag();
             transform.position = new Vector2(Player_1.transform.position.x, Player_1.transform.position.y + 1f);
             score_1 += 1f;
             bar.SetBarPlayer1();
@@ -54,24 +53,20 @@ public class PickUp : MonoBehaviour {
         }
         else if (Player2)
         {
-            DropFlag();
             transform.position = new Vector2(Player_2.transform.position.x, Player_2.transform.position.y + 1f);
             score_2 += 1f;
             bar.SetBarPlayer2();
         }
     }
 
-    void DropFlag()
+    public void DropFlag()
     {        
-        if (Input.GetKeyDown(KeyCode.L))
-        {
             Player1 = false;
             Player2 = false;
             rigid.gravityScale = 1;
             Physics2D.IgnoreLayerCollision(0, 9, true);
             FlagColl.enabled = true;
             StartCoroutine(wait());                     
-        }
     }
 
     IEnumerator wait()
