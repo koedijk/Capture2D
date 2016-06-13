@@ -6,10 +6,17 @@ public class Stun : MonoBehaviour {
     private PlayerMovement player;
 
     [SerializeField]
+    private GameObject flag;
+
+    private PickUp dropflag;
+
+    [SerializeField]
     private GameObject foot;
 	// Use this for initialization
 	void Start () {
         player = gameObject.GetComponent<PlayerMovement>();
+
+        dropflag = flag.GetComponent<PickUp>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +29,7 @@ public class Stun : MonoBehaviour {
         if (coll.gameObject == foot)
         {
             player.stunned = true;
+            dropflag.DropFlag();
             Invoke("BackToNormal", 3f);
         }
     }
