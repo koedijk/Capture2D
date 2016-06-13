@@ -4,6 +4,8 @@ using System.Collections;
 
 public class PickUp : MonoBehaviour {
     [SerializeField]
+    private Bar bar;
+    [SerializeField]
     private float Player1Hold;
     [SerializeField]
     private float Player2Hold;
@@ -19,8 +21,6 @@ public class PickUp : MonoBehaviour {
     private BoxCollider2D FlagColl;
     private Rigidbody2D rigid;
 
-    public Scrollbar scoreBarr_1;
-    public Scrollbar scoreBarr_2;
     public float score_1 = 0;
     public float score_2 = 0;
 
@@ -34,9 +34,6 @@ public class PickUp : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        scoreBarr_1.size = score_1;
-        scoreBarr_2.size = score_2;
-
         if (Player1 || Player2)
         {
             TimeHold();
@@ -51,14 +48,16 @@ public class PickUp : MonoBehaviour {
         {
             DropFlag();
             transform.position = new Vector2(Player_1.transform.position.x, Player_1.transform.position.y + 1f);
-            score_1 += 0.001f;
+            score_1 += 1f;
+            bar.SetBarPlayer1();
             return;
         }
         else if (Player2)
         {
             DropFlag();
             transform.position = new Vector2(Player_2.transform.position.x, Player_2.transform.position.y + 1f);
-            score_2 += 0.001f;         
+            score_2 += 1f;
+            bar.SetBarPlayer2();
         }
     }
 

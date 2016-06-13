@@ -35,6 +35,11 @@ public class PlayerAnimations : MonoBehaviour {
 
     void AnimPlayer()
     {
+        if (move.stunned == true)
+        {
+            anim.Play("Stun");
+            return;
+        }
         SpeedPlayer = GameObject.Find(Playername).GetComponent<PlayerMovement>().movex;
         if (SpeedPlayer > 0.1)
         {
