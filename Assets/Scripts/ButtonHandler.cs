@@ -8,6 +8,7 @@ public class ButtonHandler : MonoBehaviour {
     public GameObject[] obj;
     public Text Player1;
     public Text Player2;
+    private int GameMode;
 	// Use this for initialization
 	void Start () {
 	
@@ -20,8 +21,6 @@ public class ButtonHandler : MonoBehaviour {
 
     public void StartGame()
     {
-        PlayerPrefs.SetString("Player1Name", Player1.text);
-        PlayerPrefs.SetString("Player2Name", Player2.text);
         SceneManager.LoadScene(1);
     }
     public void Options()
@@ -38,9 +37,5 @@ public class ButtonHandler : MonoBehaviour {
     {
         obj[0].SetActive(false);
         obj[2].SetActive(true);
-    }
-    public void HowToPlay()
-    {
-    
     }
 }
