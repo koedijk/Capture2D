@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-     float timeLeft = 61.0f;
+     public float timeLeft = 10f;
      
      public Text text;
 

@@ -26,7 +26,6 @@ public class Stun : MonoBehaviour {
         if (coll.gameObject.tag == "Weapon")
         {
             player.stunned = true;
-            Debug.Log("help");
             dropflag.DropFlag();
             Invoke("BackToNormal", 3f);
         }
