@@ -39,4 +39,8 @@ public class ButtonHandler : MonoBehaviour {
         obj[0].SetActive(false);
         obj[2].SetActive(true);
     }
+    public void HowToPlay()
+    {
+    
+    }
 }

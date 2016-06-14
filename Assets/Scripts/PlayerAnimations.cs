@@ -6,10 +6,10 @@ public class PlayerAnimations : MonoBehaviour {
     private Animator anim;
     private PlayerMovement move;
     private Attack attack;
-    private float SpeedPlayer;
+    public float SpeedPlayer;
     private int Switch;
-    private bool Left;
-    private bool Right;
+    public bool Left;
+    public bool Right;
     private string Playername;
 	// Use this for initialization
 	void Awake ()

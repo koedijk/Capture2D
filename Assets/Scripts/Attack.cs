@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class Attack : MonoBehaviour {
+    public GameObject attackColRight;
+    public GameObject attackColLeft;
     private Animator anim;
-    private Animation anim2;
+    public PlayerAnimations animations;
     private PlayerMovement player;
     [SerializeField]
     private string PlayerName;
@@ -21,15 +23,39 @@ public class Attack : MonoBehaviour {
         }
         else if(PlayerName == "Player2")
         {
-            AttackKey = ".";
+            AttackKey = "insert";
         }
-        player = GameObject.Find(PlayerName).GetComponent<PlayerMovement>(); 
+        player = GameObject.Find(PlayerName).GetComponent<PlayerMovement>();
         anim = GetComponent<Animator>();
-	}
+        attackColRight.SetActive(false);
+        attackColLeft.SetActive(false);
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (PlayerAttack == true)
+        {
+            if (animations.Right == true)
+            {
+                attackColRight.SetActive(true);
+                attackColLeft.SetActive(false);
+                return;
+            }
+            else if (animations.Left == true)
+            {
+                attackColLeft.SetActive(true);
+                attackColRight.SetActive(false);
+                return;
+            }
+            else if (animations.Right == false && animations.Left == false)
+            {
+                attackColRight.SetActive(true);
+            }
+            
+        }
+
         if (Input.GetKeyDown(AttackKey) && player.jumping == false && PlayerAttack == false)
         {
             anim.SetTrigger("Attack");
@@ -42,5 +68,7 @@ public class Attack : MonoBehaviour {
     {
         yield return new WaitForSeconds(1.2f);
         PlayerAttack = false;
+        attackColRight.SetActive(false);
+        attackColLeft.SetActive(false);
     }
 }
