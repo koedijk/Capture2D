@@ -71,7 +71,7 @@ public class PickUp : MonoBehaviour {
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         Physics2D.IgnoreLayerCollision(0, 9, false);  
     }
 

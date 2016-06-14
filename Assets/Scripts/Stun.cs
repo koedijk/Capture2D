@@ -9,9 +9,6 @@ public class Stun : MonoBehaviour {
     private GameObject flag;
 
     private PickUp dropflag;
-
-    [SerializeField]
-    private GameObject foot;
 	// Use this for initialization
 	void Start () {
         player = gameObject.GetComponent<PlayerMovement>();
@@ -26,7 +23,7 @@ public class Stun : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject == foot)
+        if (coll.gameObject.tag == "Weapon")
         {
             player.stunned = true;
             Debug.Log("help");

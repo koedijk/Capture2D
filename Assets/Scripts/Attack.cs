@@ -37,19 +37,19 @@ public class Attack : MonoBehaviour {
     {
         if (PlayerAttack == true)
         {
-            if (animations.Right == true)
+            if (animations.Right == true & player.stunned == false)
             {
                 attackColRight.SetActive(true);
                 attackColLeft.SetActive(false);
                 return;
             }
-            else if (animations.Left == true)
+            else if (animations.Left == true & player.stunned == false)
             {
                 attackColLeft.SetActive(true);
                 attackColRight.SetActive(false);
                 return;
             }
-            else if (animations.Right == false && animations.Left == false)
+            else if (animations.Right == false && animations.Left == false & player.stunned == false)
             {
                 attackColRight.SetActive(true);
             }
