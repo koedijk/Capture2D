@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour {
 
-    private Timer timer;
+
     private PickUp score;
 
 
@@ -16,27 +16,25 @@ public class Win : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         score = GameObject.Find("Flag").GetComponent<PickUp>();
-        timer = GameObject.Find("EventSystem").GetComponent<Timer>();
+        //timer = GameObject.Find("EventSystem").GetComponent<Timer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (timer.timeLeft == 0)
-        {
-            if (score.score_1 > score.score_2)
+            if (score.score_1 == 1500)
             {
                 Time.timeScale = 0.001f;
                 player_1_win.SetActive(true);
                 StartCoroutine(BackToMenu());  
                 
             }
-            else 
+            if (score.score_2 == 1500)
             {
                 Time.timeScale = 0.001f;
                 player_2_win.SetActive(true);
                 StartCoroutine(BackToMenu());  
+                
             }
-        }
 	}
 
     IEnumerator BackToMenu()
