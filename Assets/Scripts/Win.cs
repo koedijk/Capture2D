@@ -42,7 +42,6 @@ public class Win : MonoBehaviour {
     IEnumerator BackToMenu()
     {
         yield return new WaitForSeconds(0.003f);
-        Cursor.visible = true;
         SceneManager.LoadScene("MainMenu");
     }
 }
