@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour {
     void Jump()
     {   
         //Can Jump if not Jumping     
-        if (Input.GetKeyDown(key) && !Jumping & !stunned)
+        if (Input.GetKeyDown(key) && !Jumping)
         {
             rigid.AddForce(Vector2.up * JumpSpeed);
             Jumping = true;

@@ -29,7 +29,6 @@ public class Stun : MonoBehaviour {
         if (coll.gameObject == foot)
         {
             player.stunned = true;
-            Debug.Log("help");
             dropflag.DropFlag();
             Invoke("BackToNormal", 3f);
         }
