@@ -43,11 +43,11 @@ public class PlayerMovement : MonoBehaviour {
         PlayerName = gameObject.name;
         if (PlayerName == "Player1")
         {
-            key = "space";
+            key = "w";
         }
         else
         {
-            key = "right ctrl";
+            key = "up";
         }
         rigid = GetComponent<Rigidbody2D>();
     }
