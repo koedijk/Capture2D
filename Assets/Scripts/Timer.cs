@@ -3,19 +3,20 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Timer : MonoBehaviour {
-
-     float timeLeft = 61.0f;
-     
-     public Text text;
+     public float timeLeft = 10f;
+     private float time;
+     [SerializeField]
+     private GameObject timeBar;
 
     void Start()
     {
         StartCoroutine(Time());
     }
      
-     void Update()
+     void FixedUpdate()
      {
-         text.text = "" + timeLeft;
+         time = timeLeft / 10;
+         timeBar.transform.localScale = new Vector2(Mathf.Clamp(time,0,1), timeBar.transform.localScale.y);
          if(timeLeft < 0)
          {
              Debug.Log("times over");
@@ -25,7 +26,7 @@ public class Timer : MonoBehaviour {
     IEnumerator Time()
     {
         timeLeft--;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         StartCoroutine(Time());
     }
  }
