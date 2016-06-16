@@ -12,11 +12,14 @@ public class PickUp : MonoBehaviour {
     [SerializeField]
     private bool Player1 = false;
     [SerializeField]
-    private GameObject Player_1;
-    [SerializeField]
     private bool Player2 = false;
     [SerializeField]
+    private GameObject Player_1;
+    [SerializeField]
     private GameObject Player_2;
+
+   
+   
     [SerializeField]
     private BoxCollider2D FlagColl;
     private Rigidbody2D rigid;
