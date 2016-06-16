@@ -5,6 +5,8 @@ public class Death : MonoBehaviour {
     private PlayerMovement player;
 
     private Vector2 StartPosition;
+
+    public float deaths;
 	// Use this for initialization
 	void Start () {
         player = gameObject.GetComponent<PlayerMovement>();
@@ -32,7 +34,7 @@ public class Death : MonoBehaviour {
     private void dead() 
     {
         Debug.Log("play anymations");
-
+        deaths= +1;
         StartCoroutine(respawn());     
     }
 

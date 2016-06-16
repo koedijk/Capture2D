@@ -9,8 +9,6 @@ public class Bar : MonoBehaviour {
     [SerializeField]
     private GameObject BarPlayer2;
     [SerializeField]
-    private float maxTime = 30f;
-    [SerializeField]
     private float currentTimePlayer1 = 0f;
     [SerializeField]
     private float currentTimePlayer2 = 0f;
