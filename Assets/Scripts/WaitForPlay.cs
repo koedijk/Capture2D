@@ -4,8 +4,21 @@ using System.Collections;
 
 public class WaitForPlay : MonoBehaviour
 {
+    public GameObject Tutorial;
     public Text countdown;
     public GameObject textPanel;
+
+    void Awake()
+    {
+        if (PlayerPrefs.GetInt("Tutorial") == 1)
+        {
+            Tutorial.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("Tutorial") == 0)
+        {
+            Tutorial.SetActive(false);
+        }
+    }
 
     IEnumerator Start()
     {
