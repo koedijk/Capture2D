@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bar : MonoBehaviour {
-    [SerializeField]
-    private PickUp time;
+public class PVP_Bar : MonoBehaviour {
     [SerializeField]
     private GameObject BarPlayer1;
     [SerializeField]
