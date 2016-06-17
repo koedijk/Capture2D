@@ -9,6 +9,7 @@ public class Death : MonoBehaviour {
     public float deaths;
 	// Use this for initialization
 	void Start () {
+        deaths = 0;
         player = gameObject.GetComponent<PlayerMovement>();
         respawn_Point = GameObject.Find("RespawnPoint").GetComponent<Respawn>();
 	}

@@ -32,11 +32,11 @@ public class Win : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        kills_1 = player_2.deaths;
-        kills_2 = player_1.deaths;
-
         Flag_Win();
         PvP_Win();
+
+        kills_1 = player_2.deaths;
+        kills_2 = player_1.deaths;
 	}
 
     IEnumerator BackToMenu()
@@ -47,13 +47,13 @@ public class Win : MonoBehaviour {
 
     // win condition for the pvp mode
     private void PvP_Win() {
-        if (time.timeLeft == 0) {
+        if (time.timeLeft < 0) {
             if (kills_1 > kills_2)
             {
                 Player_1_WinScreen();
             }
             else {
-                Player_1_WinScreen();
+                Player_2_WinScreen();
             }
         }
 
