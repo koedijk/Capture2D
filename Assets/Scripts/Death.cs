@@ -4,13 +4,13 @@ using System.Collections;
 public class Death : MonoBehaviour {
     private PlayerMovement player;
 
-    private Vector2 StartPosition;
+    private Respawn respawn_Point;
 
     public float deaths;
 	// Use this for initialization
 	void Start () {
         player = gameObject.GetComponent<PlayerMovement>();
-        StartPosition = this.transform.position;
+        respawn_Point = GameObject.Find("RespawnPoint").GetComponent<Respawn>();
 	}
 	
 	// Update is called once per frame
@@ -23,12 +23,7 @@ public class Death : MonoBehaviour {
         if (coll.gameObject.tag == "Weapon")
         {
             dead();
-            Invoke("BackToNormal", 3f);
         }
-    }
-
-    private void BackToNormal() {
-        player.stunned = false;
     }
 
     private void dead() 
@@ -41,7 +36,7 @@ public class Death : MonoBehaviour {
     IEnumerator respawn()
     {
         yield return new WaitForSeconds(1);
-        this.transform.position = StartPosition;
+        respawn_Point.BackToPoint();
     }
 }
 
