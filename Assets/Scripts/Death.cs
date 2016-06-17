@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Death : MonoBehaviour {
     private PlayerMovement player;
+    private PlayerAnimations anim;
 
     private Respawn respawn_Point;
 
@@ -11,6 +12,7 @@ public class Death : MonoBehaviour {
 	void Start () {
         deaths = 0;
         player = gameObject.GetComponent<PlayerMovement>();
+        anim = gameObject.GetComponent<PlayerAnimations>();
         respawn_Point = GameObject.Find("RespawnPoint").GetComponent<Respawn>();
 	}
 	
@@ -24,6 +26,8 @@ public class Death : MonoBehaviour {
         if (coll.gameObject.tag == "Weapon")
         {
             dead();
+            anim.Death();
+            Time.timeScale = 0.001f;
         }
     }
 
@@ -36,7 +40,9 @@ public class Death : MonoBehaviour {
 
     IEnumerator respawn()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.003f);
+        Time.timeScale = 1f;
+        anim.PlayerDeath = false;
         respawn_Point.BackToPoint();
     }
 }

@@ -32,8 +32,14 @@ public class Win : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Flag_Win();
-        PvP_Win();
+        if (PlayerPrefs.GetInt("GameMode") == 1)
+        {
+            Flag_Win();
+        }
+        else if (PlayerPrefs.GetInt("GameMode") == 2)
+        {
+            PvP_Win();
+        }
 
         kills_1 = player_2.deaths;
         kills_2 = player_1.deaths;
@@ -46,8 +52,10 @@ public class Win : MonoBehaviour {
     }
 
     // win condition for the pvp mode
-    private void PvP_Win() {
-        if (time.timeLeft < 0) {
+    void PvP_Win()
+    {
+        if (time.timeLeft < 0)
+        {
             if (kills_1 > kills_2)
             {
                 Player_1_WinScreen();
@@ -57,12 +65,12 @@ public class Win : MonoBehaviour {
             }
         }
 
-        if (kills_1 == 10)
+        else if (kills_1 == 10)
         {
             Player_1_WinScreen();
         }
 
-        if (kills_2 == 10)
+        else if (kills_2 == 10)
         {
             Player_2_WinScreen();
         }

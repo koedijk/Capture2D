@@ -10,6 +10,7 @@ public class PlayerAnimations : MonoBehaviour {
     private int Switch;
     public bool Left;
     public bool Right;
+    public bool PlayerDeath = false;
     private string Playername;
 	// Use this for initialization
 	void Awake ()
@@ -35,50 +36,69 @@ public class PlayerAnimations : MonoBehaviour {
 
     void AnimPlayer()
     {
+        if (PlayerDeath == true)
+        {
+            return;
+        }
         if (move.stunned == true)
         {
             anim.Play("Stun");
             return;
         }
         SpeedPlayer = GameObject.Find(Playername).GetComponent<PlayerMovement>().movex;
-        if (SpeedPlayer > 0.1)
+        if (SpeedPlayer > 0.5)
         {
             Left = false;
             Right = true;
         }
 
-        else if (SpeedPlayer < -0.1)
+        else if (SpeedPlayer < -0.5)
         {
             Right = false;
-            Left = true;            
+            Left = true;          
         }
-        else if (SpeedPlayer == 0f && attack.PlayerAttack == false)
-        {
-            anim.Play("Idle");
-        }
+
         if (move.jumping == false && attack.PlayerAttack == false)
         {            
-            if (Right)
+            if (SpeedPlayer > 0.1f)
             {
                 anim.Play("Run Right");
-                return;
             }
-            else if (Left)
+            else if (SpeedPlayer < -0.1f)
             {
                 anim.Play("Run Left");
                 return;
             }
         }
-        
-        if (move.jumping == true && Right == true)
+        if (SpeedPlayer == 0 && attack.PlayerAttack == false && move.jumping == false)
+        {
+            anim.Play("Idle");
+            if (Right == true && Left == false)
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else if (Left == true && Right == false)
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+
+        if (move.jumping == true && Right == true && Left == false)
         {
             anim.Play("Jump Right Up");
-            return;
         }
-        else if (move.jumping == true && Left == true)
+        else if (move.jumping == true && Left == true && Right == false)
         {
             anim.Play("Jump Left Up");
-            return;
         }
+    }
+    public void Death()
+    {
+        anim.Play("Death");
+        PlayerDeath = true;
     }
 }

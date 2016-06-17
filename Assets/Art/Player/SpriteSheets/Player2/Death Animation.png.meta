@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 06472c60f344ce649b7433a696db2439
+timeCreated: 1466159283
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Death Animation_0
+    21300002: Death Animation_1
+    21300004: Death Animation_2
+    21300006: Death Animation_3
+    21300008: Death Animation_4
+    21300010: Death Animation_6
+    21300012: Death Animation_8
+    21300014: Death Animation_10
+    21300016: Death Animation_12
+    21300018: Death Animation_14
+    21300020: Death Animation_16
+    21300022: Death Animation_18
+    21300024: Death Animation_20
+    21300026: Death Animation_21
+    21300028: Death Animation_22
+    21300030: Death Animation_23
+    21300032: Death Animation_24
+    21300034: Death Animation_25
+    21300036: Death Animation_26
+    21300038: Death Animation_27
+    21300040: Death Animation_28
+    21300042: Death Animation_29
+    21300044: Death Animation_30
+    21300046: Death Animation_31
+    21300048: Death Animation_32
+    21300050: Death Animation_33
+    21300052: Death Animation_34
+    21300054: Death Animation_35
+    21300056: Death Animation_36
+    21300058: Death Animation_37
+    21300060: Death Animation_38
+    21300062: Death Animation_39
+    21300064: Death Animation_40
+    21300066: Death Animation_41
+    21300068: Death Animation_42
+    21300070: Death Animation_43
+    21300072: Death Animation_44
+    21300074: Death Animation_45
+    21300076: Death Animation_46
+    21300078: Death Animation_47
+    21300080: Death Animation_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Death Animation_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 183
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 183
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 183
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 183
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 183
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 154
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 154
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 154
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 154
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 154
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 125
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 125
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_20
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 126
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 126
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_22
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 126
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 126
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 97
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 100
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 100
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 100
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 100
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 72
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 80
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 80
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_32
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 80
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 55
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_34
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 55
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 55
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_36
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 55
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 38
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_38
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 38
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_39
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 38
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_40
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 38
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_41
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 21
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_42
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 21
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_43
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 21
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_44
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 21
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_45
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_46
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 4
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Death Animation_47
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 31
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

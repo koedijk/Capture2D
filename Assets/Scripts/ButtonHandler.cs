@@ -24,7 +24,7 @@ public class ButtonHandler : MonoBehaviour {
 
     public void StartGame()
     {
-        SceneManager.LoadScene(GameModeInt);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("GameMode"));
     }
     public void Options()
     {
@@ -80,14 +80,14 @@ public class ButtonHandler : MonoBehaviour {
     {
         if (ModeCTF == true)
         {
-            GameModeInt = 2;
+            PlayerPrefs.SetInt("GameMode", 2);
             obj[7].SetActive(false);
             obj[8].SetActive(true);
             ModeCTF = false;
         }
         else if (ModeCTF == false)
         {
-            GameModeInt = 1;           
+            PlayerPrefs.SetInt("GameMode", 1);
             obj[7].SetActive(true);
             obj[8].SetActive(false);
             ModeCTF = true;
