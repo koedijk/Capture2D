@@ -80,13 +80,13 @@ public class PickUp : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Player1")
+        if (Player_1.GetComponent<PlayerMovement>().stunned == false  && coll.gameObject.tag == "Player1")
         {
-            Player1 = true;
+             Player1 = true;
         }
-        else if (coll.gameObject.tag == "Player2")
+         else if (Player_2.GetComponent<PlayerMovement>().stunned == false && coll.gameObject.tag == "Player2")
         {
-            Player2 = true;
+             Player2 = true;
         }
     }
 }

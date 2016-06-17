@@ -8,11 +8,7 @@ public class SoundsValues : MonoBehaviour {
 	// Use this for initialization
 	void Awake ()
     {
-        for (int i = 0; i < sources.Length; i++)
-        {
-            sources[i].volume = PlayerPrefs.GetInt("Sound");
-            i++;
-        }
+        SetSoundVolume();
     }
 	
 	// Update is called once per frame
@@ -22,11 +18,9 @@ public class SoundsValues : MonoBehaviour {
 
     public void SetSoundVolume()
     {
-        Debug.Log("Hoi");
         for(int i = 0; i < sources.Length; i++)
         {
             sources[i].volume = PlayerPrefs.GetInt("Sound");
-            i++;
         }
     }
 }

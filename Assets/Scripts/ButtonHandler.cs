@@ -14,8 +14,8 @@ public class ButtonHandler : MonoBehaviour {
     private bool ModeCTF = true;
 	// Use this for initialization
 	void Awake () {
-        PlayerPrefs.SetInt("Tutorial", 1);
-        PlayerPrefs.SetInt("Sound", 1);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
 	}
 	
 	// Update is called once per frame

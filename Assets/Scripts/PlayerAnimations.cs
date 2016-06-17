@@ -46,30 +46,30 @@ public class PlayerAnimations : MonoBehaviour {
             Left = false;
             Right = true;
         }
+
         else if (SpeedPlayer < -0.1)
         {
             Right = false;
             Left = true;            
         }
-        if (move.jumping == false && attack.PlayerAttack == false)
+        else if (SpeedPlayer == 0f && attack.PlayerAttack == false)
         {
-            if (SpeedPlayer == 0f)
-            {
-                anim.Play("Idle");
-                return;
-            }
-            else if (SpeedPlayer > 0.1f)
+            anim.Play("Idle");
+        }
+        if (move.jumping == false && attack.PlayerAttack == false)
+        {            
+            if (Right)
             {
                 anim.Play("Run Right");
                 return;
             }
-            else if (SpeedPlayer < -0.1f)
+            else if (Left)
             {
                 anim.Play("Run Left");
                 return;
             }
-
         }
+        
         if (move.jumping == true && Right == true)
         {
             anim.Play("Jump Right Up");

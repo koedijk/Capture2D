@@ -35,21 +35,24 @@ public class Attack : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (player.stunned)
+        {
+            return;
+        }
         if (PlayerAttack == true)
         {
-            if (animations.Right == true & player.stunned == false)
+            if (animations.Right == true)
             {
                 attackColRight.SetActive(true);
                 attackColLeft.SetActive(false);
-                return;
             }
-            else if (animations.Left == true & player.stunned == false)
+            else if (animations.Left == true)
             {
                 attackColLeft.SetActive(true);
                 attackColRight.SetActive(false);
                 return;
             }
-            else if (animations.Right == false && animations.Left == false & player.stunned == false)
+            else if (animations.Right == false && animations.Left == false)
             {
                 attackColRight.SetActive(true);
             }

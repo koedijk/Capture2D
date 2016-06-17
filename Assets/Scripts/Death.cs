@@ -34,7 +34,7 @@ public class Death : MonoBehaviour {
     private void dead() 
     {
         Debug.Log("play anymations");
-        deaths= +1;
+        deaths++;
         StartCoroutine(respawn());     
     }
 
